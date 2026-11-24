@@ -7,4 +7,4 @@ this repo is a port of pwnfox to work with google chrome
 1. download the repo on your computer
 2. go to `chrome://extensions` and click `load unpacked` and choose the repo folder
 
-#### note: this project was completely created by AI, i just checked that everything works and uploaded it here
+note: <i>this project was completely created by AI, i just checked that everything works and uploaded it here</i>
