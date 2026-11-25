@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PwnFox</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <header>
+        <div id="icon"><img src="../../icons/icon-48.png" width="48" height="48" alt="PwnFox"></div>
+        <h1>PwnFox</h1>
+        <div class="right">
+            <label class="inline-toggle">
+                Enabled <input id="option-enabled" type="checkbox">
+            </label>
+            <a id="settings" href="#">Settings</a>
+        </div>
+    </header>
+    <main>
+        <div class="options-group">
+            <h2>Burp Proxy</h2>
+            <hr>
+            <label class="option-entry">
+                <span>Use Burp Proxy <span id="proxy-addr" class="option-sub"></span></span>
+                <input id="option-useBurpProxy" type="checkbox">
+            </label>
+            <label class="option-entry">
+                <span>Add container header</span>
+                <input id="option-addContainerHeader" type="checkbox">
+            </label>
+        </div>
+
+        <h2>New container tab</h2>
+        <hr>
+        <div id="identities"></div>
+
+        <div class="status-bar">
+            <span id="current-tab-status" class="status-pill">Current tab: Default</span>
+            <button id="clear-current-btn" class="btn-link" type="button" hidden>Clear container</button>
+        </div>
+    </main>
+    <script src="../icon.js"></script>
+    <script src="../config.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
